@@ -1,9 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <nav
+      class="navbar navbar-dark bg-dark justify-content-between flex-nowrap flex-row"
+    >
+      <div class="container">
+        <a class="navbar-brand float-left">Store</a>
+        <ul class="navbar-nav flex-row float-left">
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="AddProduct">Add</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="EditProduct"
+              >Edit</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link pr-3" to="listProduct"
+              >List</router-link
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
     <router-view />
   </div>
 </template>
